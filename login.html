@@ -1,17 +1,54 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>登录</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找房无忧——登录</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
+    <div class="main">
 
+        <!-- 头部 -->
+        <div class="header">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/index/logo.jpg" alt=""></a>
+            </div>
+            <div class="mine">
+                <a href="./my.html" class="my"></a>
+                <a href="javaScript:;" class="app"></a>
+            </div>
+        </div>
+        <!-- 头部下方盒子 不需要删除即可 -->
+        <div class="nav">
+            <a href="./index.html" class="black"> 首页</a>>
+            <a href="./my.html">我的</a>>
+            <a href="./register.html"> <strong>登录</strong></a>
+        </div>
+        <!-- 登录主题内容 -->
+        <div class="content">
+            <div class="first">
+                <div class="b_red">普通登录</div>
+                <div>验证码快捷登录</div>
+            </div>
+            <div><input type="text" placeholder="请输入手机号码">
+                <div>发送验证码</div>
+            </div>
+            <div>
+                <input type="password" placeholder="请输入密码">
+            </div>
+            <a href="#">立即登录</a>
+            <span>
+                <a href="./register.html">立即注册</a>
+                <a href="JavaScript:;">忘记密码</a>
+            </span>
+        </div>
+    </div>
 </body>
 
 </html>
+<script src="./js/rem.js"></script>
