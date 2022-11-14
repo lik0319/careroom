@@ -7,9 +7,9 @@ a {
 }
 /* 头部 */
 .main {
-  /*    margin: 0 auto;
-        min-width: 350px;
-        max-width: 800px; */
+  margin: 0 auto;
+  min-width: 350px;
+  max-width: 800px;
   /* 底部 */
 }
 .main .header {
