@@ -80,7 +80,7 @@ window.onload = function () {
             psw_s.innerHTML = '密码为6-8位数字';
             psw_s.className = '';
         } else {
-            psw_s.innerHTML = '密码不正确';
+            psw_s.innerHTML = '密码格式不正确';
             psw_s.className = 'red';
         }
     }

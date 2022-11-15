@@ -6,39 +6,17 @@ body {
   background-color: #f5f5f5;
 }
 .main {
-  /*   .centent_two {
+  /*  .centent_one {
         display: none;
     } */
 }
-.main .centent_one {
+.main .centent_two {
   display: none;
 }
-.main .content > div {
-  width: 100%;
-  height: 5rem;
-  border-bottom: 1px solid #dcdcdc;
-  position: relative;
-}
-.main .content > div:nth-of-type(2) div {
-  display: inline-block;
-  width: 9rem;
-  height: 3.5rem;
-  line-height: 3.5rem;
-  text-align: center;
-  font-size: 1.2rem;
-  border: 1px solid #dcdcdc;
-  position: absolute;
-  top: 0.75rem;
-  right: 3rem;
-  color: #666666;
-}
-.main .content > div input {
-  width: 100%;
-  height: 100%;
-  border: none;
-  outline: none;
-  padding-left: 1.5rem;
-  box-sizing: border-box;
+.main .content {
+  /* .c3 {
+            display: none;
+        } */
 }
 .main .content .first {
   display: flex;
@@ -54,7 +32,61 @@ body {
 .main .content .first .b_red {
   border-bottom: 2px solid #ff8a00;
 }
-.main .content > a {
+.main .content .content1 {
+  width: 100%;
+}
+.main .content .content1 > div {
+  width: 100%;
+  height: 5rem;
+  border-bottom: 1px solid #dcdcdc;
+  position: relative;
+}
+.main .content .content1 > div > span {
+  width: 10rem;
+  height: 5rem;
+  line-height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  color: #ff8a00;
+}
+.main .content .content1 > div div {
+  display: inline-block;
+  width: 9rem;
+  height: 3.5rem;
+  line-height: 3.5rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border: 1px solid #dcdcdc;
+  position: absolute;
+  top: 0.75rem;
+  right: 3rem;
+  color: #666666;
+}
+.main .content .content1 input {
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  padding-left: 1.5rem;
+  box-sizing: border-box;
+}
+.main .content .content1 .yzm_text_s {
+  width: 10rem;
+  height: 5rem;
+  line-height: 5rem;
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  font-style: normal;
+}
+.main .content .content1 .green {
+  color: green;
+}
+.main .content .content1 .red {
+  color: #ff8a00;
+}
+.main .content .content1 > a {
   display: block;
   width: 94%;
   height: 5.5rem;
@@ -66,22 +98,25 @@ body {
   background-color: #ff8a00;
   margin-top: 1rem;
 }
-.main .content span {
+.main .content .content1 > span {
   width: 94%;
   display: block;
   margin: 1rem auto;
   height: 3rem;
   position: relative;
 }
-.main .content span a {
+.main .content .content1 > span a {
   font-size: 1.4rem;
 }
-.main .content span a:nth-of-type(1) {
+.main .content .content1 > span a:nth-of-type(1) {
   color: #ff8a00;
 }
-.main .content span a:nth-of-type(2) {
+.main .content .content1 > span a:nth-of-type(2) {
   color: #3e403f;
   position: absolute;
   top: 0;
   right: 0;
+}
+.main .content .content2 {
+  display: none;
 }
