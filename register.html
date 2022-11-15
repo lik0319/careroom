@@ -8,11 +8,11 @@
     <title>找房无忧——注册</title>
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/register.css">
+
 </head>
 
 <body>
     <div class="main">
-
         <!-- 头部 -->
         <div class="header">
             <div class="logo">
@@ -33,16 +33,25 @@
         </div>
         <!-- 注册主题内容 -->
         <div class="content">
-            <div><input type="text" placeholder="请输入手机号码">
-                <div>发送验证码</div>
+            <div><input type="text" placeholder="请输入手机号码" class="tel">
+                <span class="tel_s">
+                    <!-- 手机号格式不正确 -->
+                </span>
+                <div class="yzm">发送验证码</div>
             </div>
             <div>
-                <input type="text" placeholder="请输入短信中的验证码">
+                <input type="text" placeholder="请输入短信中的验证码" class="yzm_text">
+                <span class="yzm_text_s">
+                    <!-- 验证码不正确 -->
+                </span>
             </div>
             <div>
-                <input type="password" placeholder="请输入密码">
+                <input type="password" placeholder="请输入密码" class="psw">
+                <span class="psw_s">
+                    <!-- 密码为6-8位数字 -->
+                </span>
             </div>
-            <a href="#">立即注册</a>
+            <a href="#" class="btn">立即注册</a>
         </div>
 
     </div>
@@ -50,3 +59,4 @@
 
 </html>
 <script src="./js/rem.js"></script>
+<script src="./js/register.js"></script>

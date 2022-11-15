@@ -35,6 +35,21 @@ a {
   padding-left: 1.5rem;
   box-sizing: border-box;
 }
+.main .content div span {
+  font-size: 1.2rem;
+  /*    color: @c; */
+  position: absolute;
+  top: 0;
+  left: 15rem;
+  line-height: 5rem;
+  color: #666666;
+}
+.main .content div .red {
+  color: #ff8a00;
+}
+.main .content div .green {
+  color: green;
+}
 .main .content a {
   display: block;
   width: 94%;
