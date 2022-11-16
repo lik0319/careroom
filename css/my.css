@@ -2,3 +2,67 @@
   margin: 0;
   padding: 0;
 }
+.zf {
+  width: 100%;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  background: #ffffff;
+  border-bottom: 1px solid #c5c5c5;
+  display: flex;
+}
+.zf p {
+  text-indent: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.zf span {
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+.login {
+  width: 100%;
+  height: 14rem;
+  background: url("../image/my/bg2.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.login img {
+  width: 4.4rem;
+  height: 4.4rem;
+  margin-left: 9.3rem;
+  margin-top: 1.6rem;
+}
+.login p {
+  text-align: center;
+  margin-top: 2.8rem;
+  color: #ffffff;
+}
+.list {
+  background: #ffffff;
+  border-bottom: 1px solid #dcdcdc;
+}
+.list li:last-of-type a {
+  border-bottom: none;
+}
+.list a {
+  display: block;
+  height: 3.5rem;
+  color: #666666;
+  text-decoration: none;
+  line-height: 3.5rem;
+  border-bottom: 1px solid #dcdcdc;
+  background: url("../image/my/right.png") right center no-repeat;
+  background-size: 0.6rem 1rem;
+  margin-right: 2.4rem;
+  margin-left: 1.4rem;
+}
+.btn {
+  display: inline-block;
+  width: 21rem;
+  height: 3.5rem;
+  background: #ffffff;
+  color: #ff8a00;
+  border: 1px solid #dcdcdc;
+  text-align: center;
+  line-height: 3.8rem;
+  margin: 2.5rem 1.1rem;
+}

@@ -6,12 +6,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./css/index.css">
     <script src=""></script>
 </head>
 
 <body>
+    <!-- 图片 -->
+    <div class="tu">
+        <span></span>
+        <input type="search" placeholder="输入小区或商圈名开始找房咯！">
+    </div>
+
+    <!-- 导航 -->
+    <div class="nav">
+        <ul>
+            <li><a href="#">二手房</a></li>
+            <li><a href="#">新房</a></li>
+            <li><a href="#">租房</a></li>
+            <li><a href="#">卖房</a></li>
+        </ul>
+    </div>
+
+    <div class="tu2">
+        <img src="./image/index/banner2.png" alt="">
+    </div>
+
+    <!-- 热门房源 -->
+    <div class="hot">
+        <h2>热门房源</h2><br>
+        <span>Hot house</span>
+    </div>
+    <!-- 热门房屋详情 -->
+    <section class="information">
+        <ul class="con">
+            <li>
+                <div class="left">
+                    <img src="./image/index/img1.jpg" alt="">
+                </div>
+                <div class="right">
+                    <h3>文化部中间层 一层带阁楼</h3>
+                    <p>2室1厅96㎡南北 <strong>1105万</strong></p>
+                    <p>红庙北里 <span>14268元/平</span></p>
+                    <p>
+                        <a href="#">学区房</a>
+                        <a href="#">独家</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <img src="./image/index/img2.png" alt="">
+                </div>
+                <div class="right">
+                    <h3>光大水墨&nbsp;&nbsp; 精装复式 稀缺</h3>
+                    <p>2室1厅96㎡南北 <strong>280万</strong></p>
+                    <p>光大水墨 <span>14268元/平</span></p>
+                    <p>
+                        <a href="#">学区房</a>
+                        <a href="#">独家</a>
+                        <a href="#">满五唯一</a>
+                    </p>
+                </div>
+            </li>
+            <li>
+                <div class="left">
+                    <img src="./image/index/img3.png" alt="">
+                </div>
+                <div class="right">
+                    <h3>南北通透两居&nbsp; 精装修 无</h3>
+                    <p>2室1厅96㎡南北 <strong>320万</strong></p>
+                    <p>北京新天地 <span>14268元/平</span></p>
+                    <p>
+                        <a href="#">地铁房</a>
+                        <a href="#">独家</a>
+                    </p>
+                </div>
+            </li>
+        </ul>
+    </section>
+
+    <!--热门关注、友情链接-->
+    <section class="hotAttention">
+        <ul class="title">
+            <li><a href="#">热门关注</a></li>
+            <li>友情链接</li>
+        </ul>
+        <div class="content">
+            <ul>
+                <li>北京二手房</li>
+                <li>北京二手房价</li>
+                <li>海淀日租房</li>
+                <li>朝阳新房</li>
+            </ul>
+            <ul>
+                <li>北京找房无忧</li>
+                <li>青年家园</li>
+                <li>免税房源</li>
+                <li>满五年唯一免税</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 免费下载 -->
+    <div class="down">
+        <img class="close" src="./image/index/close.png" alt="">
+        <div class="left">
+            <img src="./image/index/download.png" alt="">
+        </div>
+        <div class="centent">
+            <p>找房无忧</p>
+            <p>市场行情，一手掌握！</p>
+        </div>
+        <div class="right">
+            <a href="#">免费下载</a>
+        </div>
+    </div>
 
 </body>
 
 </html>
+<script>
+    var close = document.getElementsByClassName('close')[0];
+    var down = document.getElementsByClassName('down')[0];
+    close.onclick = function () {
+        down.style.display = 'none';
+    }
+</script>
