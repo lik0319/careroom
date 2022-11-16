@@ -88,7 +88,7 @@ window.onload = function () {
     // 立即注册
     var btn = document.getElementsByClassName('btn')[0];
     btn.onclick = function () {
-        console.log(tel_s.innerHTML == '正确');
+
         if (tel_s.innerHTML == '正确' && yzm_text_s.innerHTML == '正确' && psw_s.innerHTML == '正确') {
             window.location.href = './login.html';
             localStorage.setItem('user', tel.value);

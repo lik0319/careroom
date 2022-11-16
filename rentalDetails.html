@@ -8,6 +8,7 @@
     <title>找房无忧——租房详情页</title>
     <link rel="stylesheet" href="./css/public.css">
     <link rel="stylesheet" href="./css/rentalDetails.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
 </head>
 
 <body>
@@ -30,8 +31,25 @@
         </div>
         <!-- 头部大图片 -->
         <div class="img">
-            <img src="./image/rentalList/banner.png" alt="">
-            <span>分享</span>
+            <!-- <img src="./image/rentalList/banner.png" alt="">
+            <span>分享</span> -->
+            <div class="swiper">
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img1.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img2.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img3.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img4.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img5.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img6.png" alt=""></div>
+                    <div class="swiper-slide"><img src="./image/SecondhandList/img7.png" alt=""></div>
+
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination" id="span"></div>
+
+            </div>
         </div>
         <!-- 大图片下边的解释说明标题 -->
         <div class="description">
@@ -150,3 +168,40 @@
 
 </html>
 <script src="./js/rem.js"></script>
+<script src="./js/swiper-bundle.min.js"></script>
+<script>
+    var mySwiper = new Swiper('.swiper', {
+        direction: 'horizontal', // 垂直切换选项
+        loop: true, // 循环模式选项
+        autoplay: true,//等同于以下设置
+        /*autoplay: {
+          delay: 3000,
+          stopOnLastSlide: false,
+          disableOnInteraction: true,
+          },*/
+        // 如果需要分页器
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+            type: 'fraction',
+        },
+
+
+        // 如果需要前进后退按钮
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+
+        // 如果需要滚动条
+        scrollbar: {
+            el: '.swiper-scrollbar',
+        },
+    })
+    //鼠标滑过pagination控制swiper切换
+    for (i = 0; i < mySwiper.pagination.bullets.length; i++) {
+        mySwiper.pagination.bullets[i].onmouseover = function () {
+            this.click();
+        };
+    }    
+</script>

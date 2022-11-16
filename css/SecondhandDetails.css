@@ -35,20 +35,44 @@ body {
 .main .img {
   width: 100%;
   position: relative;
+  /* 
+        img {
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+
+        .span {
+            display: inline-block;
+            color: #fff;
+            padding: 0 1rem;
+            background-color: rgb(43, 42, 42, .8);
+            border-radius: 1rem;
+            position: absolute;
+            right: 1.5rem;
+            bottom: 2rem;
+        } */
 }
-.main .img img {
+.main .img .swiper {
   width: 100%;
+  height: 23rem;
+  /*  height: 280px; */
   margin-bottom: 0.5rem;
+  position: relative;
 }
-.main .img span {
+.main .img .swiper img {
+  width: 100%;
+  height: 100%;
+}
+.main .img .swiper #span {
+  width: 3rem;
   display: inline-block;
   color: #fff;
   padding: 0 1rem;
   background-color: #2b2a2a;
   border-radius: 1rem;
-  position: absolute;
-  right: 1.5rem;
-  bottom: 2rem;
+  /*  position: absolute;
+                left: 32rem;
+                bottom: 2rem; */
 }
 .main .message {
   width: 100%;
