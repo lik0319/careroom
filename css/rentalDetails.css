@@ -2,3 +2,198 @@
   margin: 0;
   padding: 0;
 }
+body {
+  background-color: #f5f5f5;
+}
+.main {
+  /*  头部大图片*/
+  /*         <!-- 大图片下边的解释说明标题 --> */
+  /* 详情1 */
+  /* 详细信息2 */
+  /* <!-- 经纪人评价 看房客户记录 --> */
+  /* 联系方式 */
+}
+.main .img {
+  width: 100%;
+  position: relative;
+  /* img {
+            width: 100%;
+        }
+
+        span {
+            display: inline-block;
+            color: #fff;
+            padding: 1.5rem 2.5rem;
+            background-color: rgba(8, 8, 8, 0.5);
+            border-radius: 1rem 0 0 1rem;
+            position: absolute;
+            right: 0rem;
+            bottom: 2rem;
+        } */
+}
+.main .img .swiper {
+  width: 100%;
+  height: 23rem;
+  /*  height: 280px; */
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+.main .img .swiper img {
+  width: 100%;
+  height: 100%;
+}
+.main .img .swiper #share {
+  width: 3rem;
+  display: inline-block;
+  color: #fff;
+  padding: 1.5rem 2.5rem;
+  background-color: rgba(8, 8, 8, 0.5);
+  border-radius: 1rem 0 0 1rem;
+  position: absolute;
+  right: 0rem;
+  bottom: 2rem;
+}
+.main .description {
+  width: 100%;
+  background-color: #fff;
+  height: 9rem;
+  display: flex;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  border-bottom: 1px solid #dcdcdc;
+}
+.main .description .d_l {
+  flex: 4;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  letter-spacing: 0.06rem;
+}
+.main .description .d_r {
+  flex: 1;
+  border-left: 1px solid #dcdcdc;
+  text-align: center;
+  padding-top: 3.5rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  color: #666666;
+  background: url(../image/rentalList/xin.png) no-repeat center 1rem;
+  background-size: 2.2rem;
+}
+.main .detail1 {
+  width: 100%;
+  height: 12rem;
+  display: flex;
+  border-bottom: 1px solid #e2e2e2;
+}
+.main .detail1 div {
+  flex: 1;
+  border-right: 1px solid #e2e2e2;
+  margin: 2rem 0;
+  text-align: center;
+  padding-top: 2.5rem;
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.main .detail1 div span {
+  color: #ff8a00;
+}
+.main .detail2 {
+  width: 100%;
+  padding: 0 2rem;
+  box-sizing: border-box;
+  background-color: #fff;
+}
+.main .detail2 table {
+  width: 100%;
+}
+.main .detail2 table tr td {
+  width: 50%;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 1.4rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+.main .title {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding-top: 0rem;
+  padding-left: 1.5rem;
+  color: #ff8a00;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 6rem;
+  line-height: 6rem;
+  border-bottom: 1px solid #e2e2e2;
+  box-sizing: border-box;
+  background: url(../image/rentalList/right.png) no-repeat 34rem center;
+  background-size: 1rem;
+}
+.main .appraise {
+  background-color: #fff;
+}
+.main .appraise p {
+  padding: 2rem 1.5rem;
+  border-bottom: 1px solid #e2e2e2;
+  font-size: 1.4rem;
+  line-height: 3rem;
+  box-sizing: border-box;
+}
+.main .location {
+  box-sizing: border-box;
+}
+.main .location .map {
+  width: 95%;
+  margin: 0 auto;
+  border: 1px solid #e2e2e2;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem 0;
+  box-sizing: border-box;
+}
+.main .location .map h3 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 1rem;
+  padding-left: 0.5rem;
+  box-sizing: border-box;
+}
+.main .location .map img {
+  width: 100%;
+}
+.main .history p span {
+  color: #ff8a00;
+}
+.main .cantact {
+  width: 100%;
+  background-color: #fff;
+  height: 7rem;
+  display: flex;
+  padding: 1rem 1.5rem;
+  box-sizing: border-box;
+  font-size: 1.5rem;
+}
+.main .cantact .zs {
+  flex: 4;
+  display: flex;
+}
+.main .cantact .zs img {
+  width: 5rem;
+  margin-right: 1rem;
+}
+.main .cantact .zs p {
+  line-height: 2rem;
+}
+.main .cantact .tell,
+.main .cantact .mes {
+  flex: 1;
+  padding-top: 3.6rem;
+  box-sizing: border-box;
+}
+.main .cantact .tell {
+  background: url(../image/rentalList/icon1.png) no-repeat;
+  background-size: 3.5rem;
+}
+.main .cantact .mes {
+  background: url(../image/rentalList/icon2.png) no-repeat;
+  background-size: 3.5rem;
+}

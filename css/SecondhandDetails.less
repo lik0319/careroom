@@ -3,3 +3,427 @@
     margin: 0;
     padding: 0;
 }
+
+li {
+    list-style: none;
+}
+
+i,
+em {
+    font-style: normal;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.border {
+    border-bottom: 1px solid #e5e5e5;
+
+}
+
+.padding {
+    padding: 0 2rem;
+}
+
+.margin-top {
+    margin-top: 1.5rem;
+}
+
+@c: #ff8a00;
+
+.main {
+
+
+    /*  头部大图片*/
+    .img {
+        width: 100%;
+        position: relative;
+
+        /* 
+        img {
+            width: 100%;
+            margin-bottom: .5rem;
+        }
+
+        .span {
+            display: inline-block;
+            color: #fff;
+            padding: 0 1rem;
+            background-color: rgb(43, 42, 42, .8);
+            border-radius: 1rem;
+            position: absolute;
+            right: 1.5rem;
+            bottom: 2rem;
+        } */
+        .swiper {
+            width: 100%;
+            height: 23rem;
+            /*  height: 280px; */
+            margin-bottom: .5rem;
+            position: relative;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+
+            #span {
+                width: 3rem;
+                display: inline-block;
+                color: #fff;
+                padding: 0 1rem;
+                background-color: rgb(43, 42, 42, .8);
+                border-radius: 1rem;
+                /*  position: absolute;
+                left: 32rem;
+                bottom: 2rem; */
+
+            }
+        }
+    }
+
+    /* 信息部分 */
+    .message {
+        width: 100%;
+        padding: 1rem 2rem;
+        box-sizing: border-box;
+        background-color: #fff;
+        height: 20rem;
+
+        h2 {
+            font-size: 2.2rem;
+            line-height: 3rem;
+            margin-bottom: 1.8rem;
+        }
+
+        .price {
+            width: 100%;
+            height: 3rem;
+            font-size: 1.6rem;
+            background: url(../image/SecondhandList/phone.png) no-repeat top right;
+            background-size: 1.5rem;
+
+            span {
+                color: #db4c3f;
+                font-weight: 600;
+                margin-right: 0.5rem;
+
+            }
+        }
+
+        .time {
+            font-size: 1.4rem;
+            color: #b0b0b0;
+            margin-bottom: 1.5rem;
+        }
+
+        ul {
+            li {
+                list-style: none;
+                float: left;
+                background-color: #dee9f0;
+                margin-right: 1rem;
+                padding: .5rem .8rem;
+                font-size: 1.4rem;
+                color: #849aae;
+            }
+        }
+
+    }
+
+    /* 详细信息部分 */
+    .messageDetail {
+        width: 100%;
+        padding: 0 2rem;
+        box-sizing: border-box;
+        background-color: #fff;
+        .margin-top;
+
+
+        table {
+            width: 100%;
+
+            tr {
+                td {
+                    width: 50%;
+                    height: 5rem;
+                    line-height: 5rem;
+                    font-size: 1.4rem;
+                    border-bottom: 1px solid #e5e5e5;
+                }
+            }
+
+
+        }
+
+
+    }
+
+    .last {
+        width: 100%;
+        border: none;
+        height: 5rem;
+        line-height: 5rem;
+        text-align: center;
+        color: #999999;
+        font-size: 1.4rem;
+
+    }
+
+    .title {
+        margin-top: 1.5rem;
+        width: 100%;
+        .padding;
+        color: @c;
+        font-size: 1.6rem;
+        font-weight: 600;
+        height: 6rem;
+        line-height: 6rem;
+        .border;
+        box-sizing: border-box;
+    }
+
+    /* 房源特色 */
+    .special {
+        background-color: #fff;
+
+        p {
+            padding: 2rem 1.5rem;
+            .border;
+            font-size: 1.4rem;
+            line-height: 3rem;
+            box-sizing: border-box
+        }
+    }
+
+    /* 户型房间 */
+    .room {
+        .margin-top;
+        background-color: #fff;
+    }
+
+    .item {
+        padding: 2rem 1.5rem;
+        box-sizing: border-box;
+        display: flex;
+        border-bottom: 1px solid @c;
+
+        img {
+            width: 9rem;
+            margin-right: 1rem;
+        }
+
+        em {
+            font-style: normal;
+            font-size: 1.6rem;
+            font-weight: 600;
+        }
+
+        span {
+            display: inline-block;
+            font-size: 1.4rem;
+            margin: 1rem 0;
+        }
+
+        ul {
+            li {
+                float: left;
+                padding: .5rem 1rem;
+                text-align: center;
+                color: #849aae;
+                background: #f4f7f9;
+                box-sizing: border-box;
+                margin-top: 0.5rem;
+            }
+        }
+
+
+    }
+
+    .item1 {
+        border: none;
+    }
+
+    /* 对口学校 */
+    .title_b {
+        color: #000;
+    }
+
+    .scrool {
+        width: 100%;
+        background-color: #fff;
+
+
+        table {
+            width: 100%;
+
+            tr {
+                td {
+                    font-size: 1.4rem;
+                    .border;
+
+                    &:nth-of-type(1) {
+                        width: 30%;
+                        color: #999;
+                        height: 5rem;
+                        line-height: 5rem;
+                        text-align: center;
+
+                    }
+                }
+            }
+        }
+    }
+
+    /* 位置及周边 */
+    .place {
+        width: 100%;
+        background-color: #fff;
+        margin-top: 1.5rem;
+        .padding;
+        box-sizing: border-box;
+
+        .map {
+            width: 100%;
+            padding-top: 2rem;
+            padding-bottom: 2rem;
+            text-align: center;
+
+            img {
+                width: 90%;
+            }
+        }
+
+    }
+
+    /* 推荐房源 */
+    .suggest {
+        width: 100%;
+        background-color: #fff;
+
+        .s_item {
+            display: flex;
+            flex-direction: column;
+            padding: 2rem 1.5rem;
+            box-sizing: border-box;
+            padding: 1.5rem;
+            .border;
+            margin-bottom: 1rem;
+            box-sizing: border-box;
+
+            .s_item_top {
+                display: flex;
+
+                img {
+                    width: 9rem;
+                    margin-right: 1rem;
+                }
+
+                .s_item_r {
+                    em {
+                        width: 96%;
+                        display: inline-block;
+                        font-style: normal;
+                        font-size: 2rem;
+                        font-weight: 600;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                    }
+
+                    span {
+                        width: 100%;
+                        display: inline-block;
+                        font-size: 1.4rem;
+                        margin: .3rem 0;
+
+                        i {
+                            float: right;
+                            font-weight: 600;
+                            color: @c;
+                        }
+                    }
+
+                    >i {
+                        width: 100%;
+                        display: inline-block;
+                        font-size: 1.4rem;
+                        margin: .3rem 0;
+                        font-style: normal;
+                        color: #8b8b8b;
+
+                        i {
+                            font-style: normal;
+                            float: right;
+                        }
+                    }
+
+                    ul {
+                        li {
+                            float: left;
+                            padding: .5rem 1rem;
+                            text-align: center;
+                            color: #849aae;
+                            background: #f4f7f9;
+                            box-sizing: border-box;
+                            margin-top: 0.5rem;
+                            box-sizing: border-box;
+                        }
+                    }
+
+
+                }
+
+            }
+
+            .s_item_b {
+                width: 100%;
+                height: 4rem;
+                line-height: 4rem;
+                font-size: 1.5rem;
+                margin-top: 1rem;
+                background-color: #f5f5f5;
+                padding-left: 1rem;
+                position: relative;
+
+                i {
+                    border: 1rem solid transparent;
+                    position: absolute;
+                    top: -2rem;
+                    border-bottom-color: #f5f5f5;
+                }
+            }
+        }
+    }
+
+    /* 联系 */
+    .call {
+        width: 90%;
+        margin: 1.5rem auto;
+        display: flex;
+
+        .c_l {
+            background: url(../image/SecondhandList/user.png) no-repeat 4rem center;
+            background-size: 3rem;
+            background-color: @c;
+            width: 24rem;
+            height: 5rem;
+            line-height: 5rem;
+            text-align: center;
+            color: #fff;
+            font-size: 1.4rem;
+            border-radius: .4rem;
+        }
+
+        .c_r {
+            height: 5rem;
+            line-height: 5rem;
+            padding-left: 5rem;
+            font-size: 1.4rem;
+            color: #666666;
+            background: url(../image/SecondhandList/xin.png) no-repeat 1rem center;
+            background-size: 3rem;
+        }
+    }
+}

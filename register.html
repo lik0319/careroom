@@ -1,17 +1,62 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>注册</title>
-    <link rel="stylesheet" href="">
-    <script src=""></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>找房无忧——注册</title>
+    <link rel="stylesheet" href="./css/public.css">
+    <link rel="stylesheet" href="./css/register.css">
+
 </head>
 
 <body>
+    <div class="main">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="logo">
+                <a href="./index.html"><img src="./image/index/logo.jpg" alt=""></a>
+            </div>
+            <div class="mine">
+                <a href="./my.html" class="my"></a>
+                <a href="javaScript:;" class="app"></a>
+            </div>
+        </div>
+        <!-- 头部下方盒子 不需要删除即可 -->
+        <div class="nav">
+            <a href="./index.html" class="black"> 首页</a>>
+            <a href="./my.html">我的</a>>
+            <a href="./register.html">
+                <strong>注册</strong>
+            </a>
+        </div>
+        <!-- 注册主题内容 -->
+        <div class="content">
+            <div><input type="text" placeholder="请输入手机号码" class="tel">
+                <span class="tel_s">
+                    <!-- 手机号格式不正确 -->
+                </span>
+                <div class="yzm">发送验证码</div>
+            </div>
+            <div>
+                <input type="text" placeholder="请输入短信中的验证码" class="yzm_text">
+                <span class="yzm_text_s">
+                    <!-- 验证码不正确 -->
+                </span>
+            </div>
+            <div>
+                <input type="password" placeholder="请输入密码" class="psw">
+                <span class="psw_s">
+                    密码为6-8位数字
+                </span>
+            </div>
+            <a href="#" class="btn">立即注册</a>
+        </div>
 
+    </div>
 </body>
 
 </html>
+<script src="./js/rem.js"></script>
+<script src="./js/register.js"></script>
