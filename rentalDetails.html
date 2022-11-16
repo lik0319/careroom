@@ -47,8 +47,8 @@
 
                 </div>
                 <!-- 如果需要分页器 -->
-                <div class="swiper-pagination" id="span"></div>
-
+                <div class="swiper-pagination" id="share"></div>
+                <!-- <span>分享</span> -->
             </div>
         </div>
         <!-- 大图片下边的解释说明标题 -->
@@ -184,6 +184,11 @@
             el: '.swiper-pagination',
             clickable: true,
             type: 'fraction',
+            renderFraction: function (currentClass, totalClass) {
+                return '<span class=""></span>' +
+                    ' 分享 ' +
+                    '<span class=""></span>';
+            },
         },
 
 
