@@ -7,44 +7,40 @@ body {
   font-size: 1.2rem;
 }
 .search {
-  width: 21rem;
-  margin: 1rem auto;
+  width: 29rem;
+  margin: 1rem 3rem;
   position: relative;
 }
 .search input {
-  width: 21rem;
-  height: 3rem;
+  font-size: 1.2rem;
+  width: 34rem;
+  height: 4.5rem;
   border-radius: 4px;
   outline: none;
   border: 1px solid #cccccc;
-  padding-left: 0.1rem;
-  font-size: 0.12rem;
+  padding-left: 0.5rem;
+  margin-left: -1.2rem;
+  font-size: 1.5rem;
 }
 .search span {
   position: absolute;
-  top: 0.8rem;
+  top: 1.3rem;
   right: 6rem;
 }
 .search img {
   position: absolute;
-  top: 0.4rem;
+  top: 0.9rem;
   right: 1.5rem;
   width: 2rem;
 }
 .secondlist {
   width: 100%;
-}
-.secondlist .hidden {
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 2;
-  display: none;
+  height: 5rem;
+  line-height: 5rem;
 }
 .secondlist ul {
+  height: 5rem;
+  line-height: 5rem;
   width: 100%;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
@@ -62,7 +58,10 @@ body {
 .secondlist ul li h2 a {
   text-decoration: none;
   color: #666666;
-  font-size: 1.2rem;
+  font-size: 1.8rem;
+}
+.secondlist ul li h2 .red {
+  color: #ff8a00;
 }
 .secondlist ul li h2 span {
   border-top: 5px solid #ccc;
@@ -70,22 +69,169 @@ body {
   border-bottom: 5px solid transparent;
   border-left: 5px solid transparent;
   position: absolute;
-  top: 0.7rem;
-  right: -1rem;
+  top: 2rem;
+  right: -1.5rem;
 }
 .secondlist .ul {
   position: fixed;
   top: 0;
   left: 0;
 }
-/* .test {
-    width: 100%;
-    height: 30rem;
-    background-color: aqua;
-    position: absolute;
-    top: 0;
-    left: 0;
-} */
+.someList {
+  width: 100%;
+  background: #fff;
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  z-index: 10;
+  /* 价格 */
+  /* 房型 */
+  /* 更多 */
+}
+.someList .area {
+  display: none;
+  height: 28rem;
+}
+.someList .area .title {
+  height: 29rem;
+  background: #f0f0f0;
+  width: 33%;
+  float: left;
+  text-align: center;
+  line-height: 3.5rem;
+}
+.someList .area .title .active {
+  background-color: #fff;
+  color: #ff8a00;
+}
+.someList .area .hideList {
+  /*       background-color: palevioletred; */
+  width: 67%;
+  float: left;
+  font-size: 1.4rem;
+  line-height: 4rem;
+}
+.someList .area .hideList li {
+  list-style: none;
+  text-align: center;
+}
+.someList .area .hideList ul {
+  width: 100%;
+}
+.someList .area .hideList ul li {
+  width: 50%;
+  float: left;
+}
+.someList .area .hideList ul li a {
+  color: #666666;
+  font-size: 1.2rem;
+}
+.someList .area .hideList ul li .active {
+  background-color: #fff;
+  color: #ff8a00;
+}
+.someList .area .hideList ul:nth-of-type(1) {
+  /*  background-color: #ff8a00; */
+  display: flex;
+}
+.someList .area .hideList ul:nth-of-type(1) li {
+  flex: 1;
+}
+.someList .price {
+  display: none;
+  background-color: #fff;
+}
+.someList .price ul li {
+  line-height: 5rem;
+  border-bottom: 1px solid #ccc;
+  margin: 0 2rem;
+  box-sizing: border-box;
+  list-style: none;
+}
+.someList .price ul li a {
+  font-size: 1.2rem;
+  color: #666666;
+}
+.someList .house {
+  display: none;
+}
+.someList .house ul li {
+  position: relative;
+}
+.someList .house ul li span {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+.someList .house ul li .active {
+  border: 1px solid #ff8a00;
+  background: url(../image/SecondhandList/ok.png) no-repeat center center;
+  background-size: contain;
+}
+.someList .house ul li .btnOK {
+  display: inline-block;
+  width: 100%;
+  height: 5rem;
+  background-color: #ff8a00;
+  color: #fff;
+  text-align: center;
+  line-height: 5rem;
+}
+.someList .more {
+  width: 100%;
+  display: none;
+}
+.someList .more > ul > li {
+  border-bottom: 1px solid #ccc;
+  margin: 1rem 1.5rem;
+  padding: 1.5rem 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+.someList .more > ul > li > ul::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.someList .more > ul > li > ul > li {
+  list-style: none;
+  border: 1px solid #cccc;
+  width: 7rem;
+  text-align: center;
+  padding: 0 0.5rem;
+  box-sizing: border-box;
+  margin-right: 1rem;
+  height: 3rem;
+  line-height: 3rem;
+  float: left;
+  margin-top: 1rem;
+}
+.someList .more .clear {
+  border: none;
+  text-align: center;
+  height: 3rem;
+}
+.someList .more .clear a {
+  color: #666666;
+}
+.someList .more .btnOK {
+  border: none;
+  margin-top: 0.5rem;
+  padding: 0;
+}
+.someList .more .btnOK a {
+  display: inline-block;
+  width: 100%;
+  height: 5rem;
+  background-color: #ff8a00;
+  text-align: center;
+  line-height: 5rem;
+  color: #fff;
+}
 .information .con {
   padding: 0 1rem;
 }
@@ -97,29 +243,30 @@ body {
   align-items: center;
 }
 .information .con li .left img {
-  width: 6rem;
-  height: 6rem;
+  width: 10rem;
+  height: 10rem;
+  margin-left: 1.5rem;
   margin-bottom: 1.2rem;
 }
 .information .con li .right {
-  width: 18.7rem;
+  width: 22.7rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: clip;
-  margin-left: 0.6rem;
+  margin-left: 1.5rem;
   margin-bottom: 1rem;
 }
 .information .con li .right h3 {
-  font-size: 1rem;
+  font-size: 1.7rem;
   color: #000000;
 }
 .information .con li .right p {
-  font-size: 0.9rem;
+  font-size: 1.4rem;
   color: #b0b0b0;
-  line-height: 1.8rem;
+  line-height: 2.7rem;
 }
 .information .con li .right p:nth-of-type(1) {
-  font-size: 1rem;
+  font-size: 1.4rem;
   margin-top: 0.7rem;
   color: #2f272f;
 }
