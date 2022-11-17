@@ -19,3 +19,15 @@ window.onresize = function () {
     }, 200)
 
 }
+// 头部我的去向
+//   <a href="./my.html"></a>
+{/* <a href="./mylogin.html"></a> */ }
+var my = document.getElementsByClassName('my')[0];
+my.onclick = function () {
+    console.log(111);
+    if (localStorage.getItem('true')) {
+        location.href = './my.html'
+    } else {
+        location.href = './mylogin.html'
+    }
+}

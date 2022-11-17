@@ -131,7 +131,8 @@ window.onload = function () {
         telReg();
         if (tel.value != '' && psw.value != '') {
             if (localStorage.getItem('user') == tel.value && localStorage.getItem('password') == psw.value) {
-                location.href = './mylogin.html'
+                location.href = './my.html';
+                localStorage.setItem('true', tel.value)
             }
             else if (Boolean(tel_s.innerHTML != '')) {
                 alert('手机号格式不正确')
@@ -154,7 +155,8 @@ window.onload = function () {
         yzmReg();
         if (tel.value != '' && yzm_text.value != '') {
             if (localStorage.getItem('user') == tel.value && Boolean(yzm_text_s.innerHTML == '正确')) {
-                location.href = './mylogin.html'
+                location.href = './my.html';
+                localStorage.setItem('true', tel.value)
             } else if (Boolean(tel_s.innerHTML != '')) {
                 alert('手机号格式不正确')
             }
