@@ -264,7 +264,7 @@ body {
   text-overflow: ellipsis;
 }
 .main .suggest .s_item .s_item_top .s_item_r span {
-  width: 100%;
+  width: 94%;
   display: inline-block;
   font-size: 1.4rem;
   margin: 0.3rem 0;
@@ -275,7 +275,7 @@ body {
   color: #ff8a00;
 }
 .main .suggest .s_item .s_item_top .s_item_r > i {
-  width: 100%;
+  width: 95%;
   display: inline-block;
   font-size: 1.4rem;
   margin: 0.3rem 0;
@@ -329,6 +329,7 @@ body {
   border-radius: 0.4rem;
 }
 .main .call .c_r {
+  width: 5rem;
   height: 5rem;
   line-height: 5rem;
   padding-left: 5rem;

@@ -6,7 +6,8 @@ function setRem() {
     var html = document.getElementsByTagName('html')[0];
     html.style.fontSize = (client_w / ui_w) * 10 + 'px';
 }
-setRem();
+window.onload = setRem;
+// 节流
 var flg = true;
 window.onresize = function () {
     if (flg) {

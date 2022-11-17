@@ -45,6 +45,7 @@ body {
   display: none;
 }
 .secondlist ul {
+  width: 100%;
   border-bottom: 1px solid #ccc;
   border-top: 1px solid #ccc;
   justify-content: space-around;
@@ -72,6 +73,19 @@ body {
   top: 0.7rem;
   right: -1rem;
 }
+.secondlist .ul {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+/* .test {
+    width: 100%;
+    height: 30rem;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
 .information .con {
   padding: 0 1rem;
 }
