@@ -6,18 +6,24 @@ function setRem() {
     var html = document.getElementsByTagName('html')[0];
     html.style.fontSize = (client_w / ui_w) * 10 + 'px';
 }
-window.onload = setRem;
+// window.onload = setRem;
+setRem();
 // 节流
-var flg = true;
-window.onresize = function () {
-    if (flg) {
-        setRem();
-        flg = false;
-    }
-    setTimeout(function () {
-        flg = true;
-    }, 200)
+// var flg = true;
+// window.onresize = function () {
+//     if (flg) {
+//         setRem();
+//         flg = false;
+//     }
+//     setTimeout(function () {
+//         flg = true;
+//     }, 200)
 
+// }
+var timer = null;
+window.onresize = function () {
+    clearTimeout(timer);
+    timer = setTimeout(setRem, 200);
 }
 // 头部我的去向
 //   <a href="./my.html"></a>

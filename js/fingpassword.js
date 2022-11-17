@@ -113,8 +113,7 @@ newpsw.onblur = function () {
 var newpsw1 = document.getElementsByClassName('newpsw1')[0];
 var newpsw1_s = document.getElementsByClassName('newpsw1_s')[0];
 newpsw1.onblur = function () {
-    console.log(newpsw1.value == newpsw.value);
-    if (newpsw1.value == newpsw.value) {
+    if (newpsw1.value == newpsw.value && newpsw1.value != '') {
         newpsw1_s.innerHTML = '正确';
         newpsw1_s.className = 'green';
     } else {
