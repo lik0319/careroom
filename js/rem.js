@@ -6,28 +6,16 @@ function setRem() {
     var html = document.getElementsByTagName('html')[0];
     html.style.fontSize = (client_w / ui_w) * 10 + 'px';
 }
-// window.onload = setRem;
-setRem();
-// 节流
-// var flg = true;
-// window.onresize = function () {
-//     if (flg) {
-//         setRem();
-//         flg = false;
-//     }
-//     setTimeout(function () {
-//         flg = true;
-//     }, 200)
 
-// }
+setRem();
+
+// 防抖
 var timer = null;
 window.onresize = function () {
     clearTimeout(timer);
     timer = setTimeout(setRem, 200);
 }
-// 头部我的去向
-//   <a href="./my.html"></a>
-/* <a href="./mylogin.html"></a> */
+
 var my = document.getElementsByClassName('my')[0];
 my.onclick = function () {
     if (localStorage.getItem('true')) {

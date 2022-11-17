@@ -7,8 +7,9 @@ body {
   font-size: 1.2rem;
 }
 .search {
-  width: 100%;
+  width: 90%;
   margin: 1rem 0;
+  margin-left: 1.7rem;
   position: relative;
   box-sizing: border-box;
   height: 4.5rem;
@@ -34,6 +35,17 @@ body {
   top: 0.9rem;
   right: 1.5rem;
   width: 2rem;
+}
+/*遮罩层*/
+.hidden {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  display: block;
 }
 .secondlist {
   width: 100%;

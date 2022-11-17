@@ -12,8 +12,9 @@ body {
 
 // 搜索框
 .search {
-    width: 100%;
+    width: 90%;
     margin: 1rem 0;
+    margin-left: 1.7rem;
     position: relative;
     box-sizing: border-box;
     height: 4.5rem;
@@ -47,7 +48,18 @@ body {
 
 }
 
+/*遮罩层*/
+.hidden {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    display: block;
 
+}
 
 // 区域划分
 
@@ -116,6 +128,8 @@ body {
     top: 5rem;
     left: 0;
     z-index: 10;
+
+
 
     .area {
         display: none;
@@ -303,6 +317,7 @@ body {
             }
         }
     }
+
 
 }
 
