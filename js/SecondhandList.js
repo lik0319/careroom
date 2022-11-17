@@ -1,6 +1,6 @@
 //二手房列表
 var list = document.getElementsByClassName('list')[0];
-
+var hidden = document.getElementsByClassName('hidden')[0];
 var li_ = document.getElementsByClassName('li');
 var item_ = document.getElementsByClassName('item');
 var item_a_ = document.getElementsByClassName('item_a');
@@ -13,6 +13,7 @@ for (var i = 0; i < li_.length; i++) {
         window.event ? window.event.cancelBubble = true : event.stopPropagation();
         index_ = this.getAttribute('index');
         list.className = 'list ul';
+        hidden.style.display = 'block';
         for (var j = 0; j < item_.length; j++) {
             item_[j].style.display = 'none';
             item_[index_].style.display = 'block';
@@ -34,6 +35,7 @@ for (var i = 0; i < li_.length; i++) {
 // 点击页面导航内容恢复
 document.onclick = function () {
     list.className = 'list';
+    hidden.style.display = 'none';
     for (var j = 0; j < item_.length; j++) {
         item_[j].style.display = 'none';
     }
@@ -54,5 +56,7 @@ for (var j = 0; j < item_.length; j++) {
         window.event ? window.event.cancelBubble = true : event.stopPropagation();
     }
 }
+
+
 
 

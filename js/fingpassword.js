@@ -1,7 +1,3 @@
-// 验证手机号
-/* tel.onfocus = function () {
-    psw.value = '';
-} */
 
 var tel = document.getElementsByClassName('tel')[0];
 var tel_s = document.getElementsByClassName('tel_s')[0];

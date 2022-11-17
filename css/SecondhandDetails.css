@@ -35,22 +35,6 @@ body {
 .main .img {
   width: 100%;
   position: relative;
-  /* 
-        img {
-            width: 100%;
-            margin-bottom: .5rem;
-        }
-
-        .span {
-            display: inline-block;
-            color: #fff;
-            padding: 0 1rem;
-            background-color: rgb(43, 42, 42, .8);
-            border-radius: 1rem;
-            position: absolute;
-            right: 1.5rem;
-            bottom: 2rem;
-        } */
 }
 .main .img .swiper {
   width: 100%;

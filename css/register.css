@@ -13,15 +13,6 @@ a {
   height: 5rem;
   position: relative;
   border-bottom: 1px solid #dcdcdc;
-  /*  .tel_s {
-                width: 10rem;
-                height: 5rem;
-                line-height: 5rem;
-                position: absolute;
-                top: 0;
-                left: 15rem;
-                color: #ff8a00;
-            } */
 }
 .main .content div:nth-of-type(1) div {
   display: inline-block;

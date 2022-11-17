@@ -99,5 +99,8 @@ window.onload = function () {
     }
 
 
-
+    tel.onclick = function () {
+        yzm_text.value = '';
+        psw.value = ''
+    }
 }

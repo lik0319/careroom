@@ -45,7 +45,7 @@ body {
   top: 0;
   left: 0;
   z-index: 2;
-  display: block;
+  display: none;
 }
 .secondlist {
   width: 100%;
@@ -245,10 +245,6 @@ body {
   text-align: center;
   line-height: 5rem;
   color: #fff;
-}
-.zhe {
-  width: 100%;
-  background-color: rgba(37, 37, 37, 0.4);
 }
 .information .con {
   padding: 0 1rem;

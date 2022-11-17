@@ -16,20 +16,6 @@ body {
 .main .img {
   width: 100%;
   position: relative;
-  /* img {
-            width: 100%;
-        }
-
-        span {
-            display: inline-block;
-            color: #fff;
-            padding: 1.5rem 2.5rem;
-            background-color: rgba(8, 8, 8, 0.5);
-            border-radius: 1rem 0 0 1rem;
-            position: absolute;
-            right: 0rem;
-            bottom: 2rem;
-        } */
 }
 .main .img .swiper {
   width: 100%;
