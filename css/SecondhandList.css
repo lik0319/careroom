@@ -234,6 +234,10 @@ body {
   line-height: 5rem;
   color: #fff;
 }
+.zhe {
+  width: 100%;
+  background-color: rgba(37, 37, 37, 0.4);
+}
 .information .con {
   padding: 0 1rem;
 }
