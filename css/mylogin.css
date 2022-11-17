@@ -42,17 +42,30 @@ header .list a:last-of-type {
   background: url("../image/my/down.png") center 0 no-repeat;
   background-size: 1.2rem 1.3rem;
 }
+header .login1 {
+  width: 14rem;
+  height: 10rem;
+  /*         background-color: aqua; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 header .user {
   width: 3.9rem;
   height: 3.9rem;
   position: absolute;
-  left: 9.3rem;
-  top: 4.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 1rem;
+  width: 4rem;
+  height: 4rem;
 }
 header .btn {
   position: absolute;
-  left: 8.7rem;
-  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 6rem;
   text-decoration: none;
   color: #ffffff;
   border: 1px solid #ffffff;

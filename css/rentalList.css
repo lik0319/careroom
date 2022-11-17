@@ -54,6 +54,9 @@ body {
   font-size: 1.7rem;
   color: #000000;
 }
+.main .information .con li .right p {
+  position: relative;
+}
 .main .information .con li .right p:nth-of-type(1),
 .main .information .con li .right p:nth-of-type(2) {
   font-size: 1.4rem;
@@ -69,7 +72,10 @@ body {
 }
 .main .information .con li .right p strong {
   color: #ff8a00;
-  margin-left: 6rem;
+  position: absolute;
+  top: 50%;
+  transform: translateX(-50%);
+  right: 0.5rem;
 }
 .main .information .con li:nth-of-type(5) {
   border-bottom: none;
